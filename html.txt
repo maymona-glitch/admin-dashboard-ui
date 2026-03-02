@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classera's Training Academy</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="search-container">
+      <i class='bx bx-search search-icon'></i>
+      <input type="text" placeholder="Search here..." class="search-input"/>
+    </div>
+
+    <div class="icons">
+      <i class='bx bx-envelope'></i>
+      <i class='bx bx-bell'></i>
+      <div class="profile-dropdown">
+        <div class="profile-btn">
+          <i class='bx bx-user'></i>
+          <i class='bx bx-chevron-down'></i>
+        </div>
+        <div class="dropdown-menu">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-logo-container">
+        <img src="classera.jpeg" alt="Sidebar Logo" class="sidebar-logo"/>
+        <div class="sidebar-logo-text">Classera</div>
+      </div>
+
+      <button class="sidebar-btn"><i class='bx bx-home-alt'></i><span>Dashboard</span></button>
+      <button class="sidebar-btn"><i class='bx bx-clipboard'></i><span>Tickets</span></button>
+      <button class="sidebar-btn"><i class='bx bx-user'></i><span>Customers</span></button>
+      <button class="sidebar-btn"><i class='bx bx-building'></i><span>Organizations</span></button>
+      <button class="sidebar-btn"><i class='bx bx-file'></i><span>Reports</span></button>
+      <button class="sidebar-btn"><i class='bx bx-cog'></i><span>Settings</span></button>
+
+      <div class="sera-container">
+        <i class='bx bx-message-dots'></i>
+        <span class="sera-text">Sera</span>
+      </div>
+
+      <div class="dark-mode-toggle-sidebar">
+        <i class='bx bx-sun mode-icon sun'></i>
+        <i class='bx bx-moon mode-icon moon'></i>
+        <span id="mode-label">Light mode</span>
+        <label class="switch">
+          <input type="checkbox" id="mode-switch">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
